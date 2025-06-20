@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini Games | Jiayou HSK!</title>
+  <link rel="stylesheet" href="mini-games.css" />
+</head>
+<body>
+
+  <nav>
+    <h1>🎓 Jiayou HSK!</h1>
+    <a href="home.html" class="back-btn">🏠Home</a>
+  </nav>
+
+  <main class="game-container">
+    <h2>🎮 Mini Games</h2>
+    <br><br><br>
+    
+    <div id="words" class="word-bank">
+      <button onclick="selectWord(this)">好</button>
+      <button onclick="selectWord(this)">你</button>
+      <button onclick="selectWord(this)">吗</button>
+      <button onclick="selectWord(this)">？</button>
+    </div>
+
+     <p class="instruction">Clue: asking how do you do</p>
+
+    <div class="result-area">
+      <p><strong>Your sentence:</strong></p>
+      <p id="user-sentence"></p><p id="feedback"></p>
+      <button onclick="checkSentence()">Check</button>
+      <button onclick="resetMiniGame()">Reset</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+body {
+  background-image: url('background.jpg'); /* Adjust path if image is in a subfolder */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #fff9ec, #ffe0b2) opacity(90%);
+  backdrop-filter: blur(2px);
+}
+
+nav {
+  background-color: #8d6464;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  font-size: 24px;
+  color: white;
+}
+
+#logout-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  background-color: #ce9a9a;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#logout-btn:hover {
+  background-color: #c0392b;
+}
+
+.home-container {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.home-container h2 {
+  font-size: 32px;
+  color: #d35400;
+}
+
+.home-container p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 0 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.button-grid a {
+  text-decoration: none;
+  background-color: #8d6464;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 18px;
+  transition: background 0.3s;
+  display: block;
+}
+
+.button-grid a:hover {
+  background-color: #fb8c00;
+}
+
+.a:visited{
+  color: white;
+  text-decoration: none;
+}
+
+.study-panda {
+  position: fixed;
+  right: 225px;
+  bottom: 5px;
+  width: 300px;
+  height: auto;
+  z-index: 100;
+  pointer-events: none;
+  animation: float 3s ease-in-out infinite;
+}

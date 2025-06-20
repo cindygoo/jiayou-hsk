@@ -1,0 +1,138 @@
+body {
+  background-image: url('background.jpg'); /* Adjust path if image is in a subfolder */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #fff9ec, #ffe0b2) opacity(90%);
+  backdrop-filter: blur(5px);
+}
+
+nav {
+  background-color: #8d6464;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  font-size: 24px;
+  color: white;
+}
+
+.back-btn {
+  margin-right: 20px;
+  margin-left: 0;
+  text-decoration: none;
+  color: #8d6464;
+  background-color: #fffafa;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.back-btn:hover {
+  background-color: #c0392b;
+}
+
+.grammar-container {
+  padding: 80px 0;         /* More vertical space */
+  text-align: center;
+}
+
+.grammar-container h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #8d6464;
+}
+
+.grammar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.grammar-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8d6464;
+  padding: 50px 60px;
+  border-radius: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+  text-align: left;
+  gap: 40px;
+}
+
+.grammar-text {
+  flex: 2;
+}
+
+.grammar-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grammar-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 16px;
+}
+
+.grammar-item h3 {
+  margin: 0 0 24px;
+  font-size: 40px;         /* Bigger grammar title */
+  color: #fdfcfb;
+}
+
+.grammar-item p {
+  margin: 0;
+  font-size: 28px;
+  color:#fdfdfd
+}
+
+.grammar-nav {
+  margin-top: 32px; /* Adds space above the buttons */
+}
+
+.grammar-nav button,
+#prev-grammar-btn,
+#next-grammar-btn {
+  padding: 14px 36px;
+  font-size: 20px;
+  background-color: #fdfdfd;
+  color: #8d6464;
+  border: none;
+  border-radius: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+}
+
+.grammar-nav button:disabled {
+  background-color: #e0e0e0;
+  color: #bdbdbd;
+  cursor: not-allowed;
+}
+
+.conversation-nav button:hover:not(:disabled) {
+  background-color: #0d47a1; /* Darker blue on hover */
+  color: #fff;
+}

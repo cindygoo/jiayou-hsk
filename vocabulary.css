@@ -1,0 +1,135 @@
+body {
+  background-image: url('background.jpg'); /* Adjust path if image is in a subfolder */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #fff9ec, #ffe0b2) opacity(90%);
+  backdrop-filter: blur(5px);
+}
+
+nav {
+    background-color: #8d6464;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  flex: 1;	
+  text-align: center;
+  margin: 0;
+  font-size: 24px;
+  color: white;
+}
+
+.back-btn {
+  margin-right: 20px;
+  margin-left: 0;
+  text-decoration: none;
+  color: #8d6464;
+  background-color: #fffafa;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.back-btn:hover {
+  background-color: #c0392b;
+}
+
+.vocab-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.vocab-flex {
+  display: flex;
+  background: #8d6464;
+  border-radius: 24px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+  padding: 60px 100px;   /* Increase padding */
+  gap: 60px;             /* Increase gap between info and image */
+  align-items: center;
+}
+
+.vocab-info {
+  min-width: 350px;      /* Increase min width */
+  max-width: 500px;      /* Increase max width */
+  text-align: left;
+}
+
+.vocab-image img {
+  width: 260px;          /* Bigger image */
+  height: 260px;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.vocab-container h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #f3f1ef;
+}
+
+.vocab-list {
+  list-style-type: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.vocab-list li {
+  background-color: #ffe0b2;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.vocab-info h2,
+.vocab-container h2 {
+  font-size: 60px;       /* Bigger Hanzi */
+  margin-bottom: 24px;
+  color: #f3f1ef;
+}
+
+#vocab-pinyin {
+  font-size: 30px !important; /* Bigger pinyin */
+  margin-bottom: 18px !important;
+  color: #ffffff;
+}
+
+#vocab-meaning {
+  font-size: 24px;      /* Bigger meaning */
+  color: #f3f1ef;
+}
+
+.vocab-nav button,
+#prev-btn,
+#next-btn {
+  padding: 14px 36px;
+  font-size: 20px;
+  background-color: #f9f7f7;
+  color: #8d6464;
+  border: none;
+  border-radius: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+}
+
+.conversation-nav button:hover:not(:disabled) {
+  background-color: #0d47a1; /* Darker blue on hover */
+  color: #fff;
+}

@@ -1,0 +1,117 @@
+body {
+  background-image: url('background.jpg'); /* Adjust path if image is in a subfolder */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #fff9ec, #ffe0b2) opacity(90%);
+  backdrop-filter: blur(5px);
+}
+
+nav {
+  background-color: #8d6464;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  flex: 1;
+  text-align: center;
+  color: white;
+  margin: 0;
+  font-size: 24px;
+}
+
+.back-btn {
+  margin-right: 20px;
+  margin-left: 0;
+  text-decoration: none;
+  color: #8d6464;
+  background-color: #fffafa;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.back-btn:hover {
+  background-color: #ad1457;
+}
+
+.outer-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 32px;
+  background: #8d6464;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+.profile-container {
+  font-size: 1.35rem; /* Increase font size */
+  padding: 40px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.user-info {
+  margin-bottom: 30px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #8d6464;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #8d6464;
+  text-align: center;
+}
+
+.progress-section h3 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.progress-bar-container {
+  background-color: white;
+  height: 30px;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #b08181;
+  width: 0%;
+  transition: width 0.5s ease;
+}
+
+#progress-label {
+  color: white;
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.progress-motivation {
+  color: #e9ebe9;
+  font-size: 1.1em;
+  margin-top: 0.5em;
+  text-align: center;
+  font-style: italic;
+}

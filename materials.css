@@ -1,0 +1,91 @@
+body {
+  background-image: url('background.jpg'); /* Adjust path if image is in a subfolder */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #fff9ec, #ffe0b2) opacity(90%);
+  backdrop-filter: blur(5px);
+}
+
+nav {
+  background-color: #8d6464;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  font-size: 24px;
+  color: white;
+}
+
+.back-btn {
+  margin-right: 20px;
+  margin-left: 0;
+  text-decoration: none;
+  color: #8d6464;
+  background-color: #fffafa;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.back-btn:hover {
+  background-color: #c0392b;
+}
+
+.materials-container {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.materials-container h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #d35400;
+}
+
+.materials-grid {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 20px;              /* Space between cards */
+  align-items: center;    /* Center cards horizontally */
+}
+
+.material-card {
+  background-color: #8d6464;
+  padding: 25px;
+  border-radius: 12px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: background 0.3s;
+  width: 300px;      /* Set a fixed width */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.material-card:hover {
+  background-color: #fb8c00;
+}
+
+.study-panda {
+  position: fixed;
+  right: 225px;
+  bottom: 20px;
+  width: 300px;
+  height: auto;
+  z-index: 100;
+  pointer-events: none;
+  animation: float 3s ease-in-out infinite;
+}

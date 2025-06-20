@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quizzes | Jiayou HSK!</title>
+  <link rel="stylesheet" href="quizzes.css" />
+</head>
+<body>
+
+  <nav>
+    <h1>🎓 Jiayou HSK!</h1>
+    <a href="home.html" class="back-btn">🏠Home</a>
+  </nav>
+
+  <main class="quiz-container">
+    <h2>📝 Quizzes</h2>
+    
+    <div class="quiz-question">
+      <p><strong>Q:</strong> What is the correct pinyin for "再见"?</p>
+      <div class="quiz-options">
+        <button onclick="checkAnswer(this)">zài jiàn</button>
+        <button onclick="checkAnswer(this)">zǎi jián</button>
+        <button onclick="checkAnswer(this)">zǎi jiān</button>
+        <button onclick="checkAnswer(this)">zāi jiān</button>
+      </div>
+      <p id="quiz-result"></p>
+    </div>
+  </main>
+
+    <div class="end-quiz">
+        <button onclick="location.href='index.html'" id="end-quiz-btn">End Quiz</button>
+    </div>
+
+  <script src="script.js"></script>
+  <img src="quiz.png" alt="Quiz Icon" class="quiz-bottom-img">
+</body>
+</html>

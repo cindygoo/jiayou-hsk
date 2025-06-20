@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conversation | Jiayou HSK!</title>
+  <link rel="stylesheet" href="conversation.css" />
+</head>
+<body>
+
+  <nav>
+    <h1>🎓 Jiayou HSK!</h1>
+    <a href="materials.html" class="back-btn">📚 Materials</a>
+  </nav>
+
+  <h1 align="center" style="color:#8d6464;">💬 Conversation</h1>
+
+  <main class="conversation-container">
+  <div class="conversation-item" id="conversation-item">
+    <div class="conversation-text">
+      <div id="dialogue"></div>
+    </div>
+    <div class="conversation-image">
+      <img id="conversation-img" src="convo1.png" alt="Conversation Illustration" />
+    </div>
+  </div>
+  <div class="conversation-nav">
+    <button onclick="prevConversation()" id="prev-convo-btn">Previous</button>
+    <button onclick="nextConversation()" id="next-convo-btn">Next</button>
+  </div>
+</main>
+
+  <script src="script.js"></script>
+</body>
+</html>

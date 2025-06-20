@@ -1,0 +1,141 @@
+body {
+  background-image: url('background.jpg'); /* Adjust path if image is in a subfolder */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #fff9ec, #ffe0b2) opacity(90%);
+  backdrop-filter: blur(5px);
+}
+
+nav {
+  background-color: #8d6464;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  font-size: 24px;
+  color: white;
+}
+
+.back-btn {
+  margin-right: 20px;
+  margin-left: 0;
+  text-decoration: none;
+  color: #8d6464;
+  background-color: #fffafa;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.back-btn:hover {
+  background-color: #2e7d32;
+}
+
+.quiz-container {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.quiz-container h2 {
+  font-size: 26px;
+  margin-bottom: 30px;
+  color: #8d6464;
+}
+
+.quiz-question {
+  background-color: #8d6464;
+  font-size: 25px;
+  color:white;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.quiz-options button {
+  padding: 12px;
+  font-size: 20px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  background-color: #ab9393;
+  cursor: pointer;
+}
+
+.quiz-options button:hover {
+  background-color: #d5cece;
+}
+
+#quiz-result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#next-quiz-btn {
+  display: none; /* Hidden by default, shown via JS */
+  margin: 30px auto 0 auto;
+  padding: 12px 32px;
+  font-size: 16px;
+  background-color: #8d6464;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: block;
+}
+
+#next-quiz-btn:hover {
+  background-color: #388e3c;
+}
+
+.next-quiz-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ #end-quiz-btn {
+  display: none; /* Hidden by default, shown via JS */
+  margin: 30px auto 0 auto;
+  padding: 12px 32px;
+  font-size: 16px;
+  background-color: #66bb6a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: block;
+}
+
+.quiz-bottom-img {
+  position: fixed;
+  right: 50px;
+  bottom: 24px;
+  width: 250px;     /* Adjust size as needed */
+  height: auto;
+  z-index: 100;
+  pointer-events: none; /* Allows clicks to pass through */
+}

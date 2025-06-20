@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simulations | Jiayou HSK!</title>
+  <link rel="stylesheet" href="simulations.css" />
+</head>
+<body>
+
+  <nav>
+    <h1>🎓 Jiayou HSK!</h1>
+    <a href="home.html" class="back-btn">🏠Home</a>
+  </nav>
+
+  <main class="simulation-container">
+    <h2>🧪 Simulations</h2>
+    <div class="question-block">
+      <p><strong>A: 你好！</br>
+      B:...</strong></p>
+      
+      <div class="options">
+        <button onclick="checkSimulationAnswer(this)">谢谢</button>
+        <button onclick="checkSimulationAnswer(this)">再见</button>
+        <button onclick="checkSimulationAnswer(this)">你好</button>
+      </div>
+      <p id="simulation-feedback"></p>
+      <button id="next-simulation" style="display:none;" onclick="nextSimulation()">Next</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
